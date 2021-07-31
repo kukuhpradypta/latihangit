@@ -15,27 +15,7 @@ include('mylib/myDb.php');
 <?php
 $Db = new MyDb();
 $data_warga = $Db->show();
-//print_r($data_warga);
-// if(isset($_POST['daftar'])){
-//     //echo "Tombol Daftar Telah Di klik";
-//     $noktp=$_POST['no_ktp'];
-//     $nama = $_POST['nama_lengkap'];
-//     $alamat = $_POST['alamat_lengkap'];
-//     $nohp = $_POST['no_hp'];
-//     $querysimpan = $Db->add_data($noktp,$nama,$alamat,$nohp);
-//     //print_r($_POST);
-// if($querysimpan == TRUE){
-//                 echo "<script>
-//                         alert('Berhasil tersimpan');
-//                         document.location.href = 'index.php';
-//                     </script>";
-//             } else {
-//                 echo "<script>
-//                         alert('Gagal tersimpan');
-//                         document.location.href = 'index.php';
-//                     </script>";
-//             }
-// }
+
 if(isset($_GET['hapus'])){
     //echo "Data dengan ID :".$_GET['hapus']."  Akan di hapus";
     $idwarga=$_GET['hapus'];
